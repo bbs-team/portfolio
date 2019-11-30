@@ -1,0 +1,81 @@
+<% include ./partials/header.ejs %>
+<body class="homepage is-preload">
+<div id="page-wrapper">
+	<!-- Header -->
+	<div id="header">
+
+		<!-- Inner -->
+		<div class="inner">
+			<header>
+				<h1><a href="/" id="logo">Bose's Portfolio</a></h1>
+				<hr />
+				<p>Thank you for visiting.</p>
+			</header>
+			<footer>
+				<a href="#banner" class="button circled scrolly">Start</a>
+			</footer>
+		</div>
+		<!-- Nav -->
+		<nav id="nav">
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="/algorithm">Algorithm</a></li>
+				<li><a href="/project">Project</a></li>
+				<li><a href="/baekjoon">Baekjoon</a></li>
+			</ul>
+		</nav>
+	</div>
+			<!-- Carousel -->
+				<section class="carousel" id="banner">
+					<div class="reel">
+
+						<article style="border:1px solid lightgrey">
+							<a href="/algorithm" class="image featured"><img src="/images/algorithm.jpg" alt="" /></a>
+							<header>
+								<h3><a href="/algorithm">Algorithm</a></h3>
+							</header>
+							<p>알고리즘의 기초 이론<br>Sort, 이분 탐색 등</p>
+						</article>
+
+						<article style="border:1px solid lightgrey">
+							<a href="#" class="image featured"><img src="/images/project.jpg" alt="" /></a>
+							<header>
+								<h3><a href="#">Project</a></h3>
+							</header>
+							<p>현재까지 직접 개발 연습을 하며 만든 프로젝트에 대한 설명</p>
+						</article>
+
+						<article style="border:1px solid lightgrey">
+							<a href="#" class="image featured"><img src="/images/백준.jpg" alt="" /></a>
+							<header>
+								<h3><a href="#">백준 알고리즘</a></h3>
+							</header>
+							<p>백준 알고리즘에 나오는 문제에 대한 풀이</p>
+						</article>
+
+
+
+					</div>
+				</section>
+
+			<!-- Main -->
+				<div class="wrapper style2">
+
+					<article id="main" class="container special">
+						<header>
+							<img src="/images/구본성.jpg" alt="" align="center"/>
+							<h2>안녕하세요. 구본성입니다.</h2>
+							<p>
+								저는 개발자가 되기위하여 노력한 것들을 이 홈페이지에 담았습니다.
+							</p>
+						</header>
+						<p>
+							알고리즘 이론 공부를 하며 C++를 이용하여 직접 구현을 해보았습니다.
+							백준 알고리즘 문제를 풀며 공부한 이론들을 다양한 문제에 풀어보았습니다.<br>
+							서버 개발자가 되기위한 기초적인 개발을 공부하고 직접 Docker를 이용하여 배포를 해보았습니다.<br>
+							프로젝트를 통하여 다양한 사람들과 만나며 팀에 자연스럽게 스며들고 모르는 것에 대하여 구글링을 통한 해결 능력을 키웠습니다.
+						</p>
+					</article>
+				</div>
+
+<% include ./partials/footer.ejs %>

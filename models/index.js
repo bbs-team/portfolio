@@ -15,5 +15,6 @@ db.Sequelize = Sequelize;
 
 db.algorithm = require('./algorithm')(sequelize, Sequelize);
 db.project = require('./project')(sequelize, Sequelize);
+db.etc = require('./etc')(sequelize,Sequelize);
 
 module.exports = db;

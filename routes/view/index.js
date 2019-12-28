@@ -11,7 +11,7 @@ router.get('/algorithm', (req,res) =>{
 });
 
 router.get('/algorithm/:name', (req,res) =>{
-  res.render('show_contents',{
+  res.render('show_algorithm',{
     name: req.params.name
   })
 });
@@ -22,6 +22,16 @@ router.get('/project', (req,res) =>{
 
 router.get('/baekjoon', (req,res) =>{
   res.render('baekjoon')
+});
+
+router.get('/etc',(req,res) => {
+  res.render('etc')
+})
+
+router.get('/etc/:name', (req,res) =>{
+  res.render('show_etc',{
+    name: req.params.name
+  })
 });
 
 

@@ -8,8 +8,10 @@
   "scripts": {
     "start": "node ./bin/www",
     "build": "pkg . --targets node12-win-x64 --out-path .."
-  },"pkg": {
-    "assets": ["views/**/*",
+  },
+  "pkg": {
+    "assets": [
+      "views/**/*",
       "public/**/**/*"
     ]
   },

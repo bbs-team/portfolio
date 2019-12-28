@@ -1,0 +1,32 @@
+<%- include ('partials/header') -%>
+<%- include ('partials/headers') -%>
+<%- include ('partials/etc_side') -%>
+
+<script type="text/javascript">
+  var name = '<%=name%>'
+  var getData = (name) => {
+    return callApi('GET','/etc/'+name,{name}).data;
+  };
+
+  $(document).ready( function (){
+    var data=getData(name);
+    var article = $('<article id="main"></article>');
+    var header = $('<header></header>');
+    header.append('<h2>'+name+'</h2>');
+    article.append(header);
+    article.append('<p>'+data[0].content+'</p>')
+    for(var i=1;i<data.length;i++) {
+      article.append('<img src="\/images/'+name+'_'+i+'.jpg\" alt="" />')
+      article.append('<p>'+data[i].content+'</p>')
+    }
+    $("#show_Content").append(article);
+  });
+</script>
+<script type="text/javascript" src="/javascripts/utils.js"></script>
+<!-- Main -->
+<div class="col-8 col-12-mobile imp-mobile" id="show_Content"></div>
+</div>
+</div>
+</div>
+
+<%- include ('partials/footer') -%>

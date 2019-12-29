@@ -20,4 +20,5 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', viewRouter);
 app.use('/api', apiRouter);
+console.log("test");
 module.exports = app;
